@@ -1,5 +1,13 @@
 /** @format */
-
+.whatsapp_widget_wrapper {
+	position: fixed;
+	z-index: 99999999;
+	display: flex;
+	flex-direction: column;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+		"Oxygen", "Ubuntu", "Helvetica Neue", Arial, sans-serif,
+		"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
 .whatsapp_widget_chat_wrapper {
 	max-width: 300px;
 	width: 300px;
@@ -128,12 +136,18 @@
 	-webkit-transform: translateY(0);
 	transform: translateY(0);
 }
-.whatsapp_widget_wrapper {
-	position: fixed;
-	z-index: 99999999;
-	display: flex;
-	flex-direction: column;
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
-		"Oxygen", "Ubuntu", "Helvetica Neue", Arial, sans-serif,
-		"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+.whatsapp_widget_bubble_anim {
+	background-color: #fff;
+	padding: 0px;
+	width: 70px;
+	height: 40px;
+	position: relative;
+	border-radius: 30px;
+}
+.whatsapp_widget_bubble_anim_inner {
+	position: absolute;
+	width: 70px;
+	height: 40px;
+	top: -10px;
+	left: 18px;
 }
