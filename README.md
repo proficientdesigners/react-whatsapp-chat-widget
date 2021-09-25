@@ -23,7 +23,7 @@ import "react-whatsapp-chat-widget/index.css";
 const ReactApp = () => {
 	return (
 		<WhatsAppWidget
-			phoneNo="+123 12345 00000"
+			phoneNo="919884098840"
 			position="right"
 			iconSize="40"
 			iconColor="white"
