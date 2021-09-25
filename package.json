@@ -1,0 +1,19 @@
+{
+	"name": "react-whatsapp-chat-widget",
+	"version": "1.0.0",
+	"description": "WhatsApp chat widget for react app",
+	"main": "index.js",
+	"license": "MIT",
+	"homepage": "https://github.com/proficientdesigners/react-whatsapp-chat-widget",
+	"devDependencies": {},
+	"repository": "proficientdesigners/react-whatsapp-chat-widget",
+	"keywords": [
+		"reactJs",
+		"react",
+		"whatsapp",
+		"widget",
+		"api"
+	],
+	"author": "Proficient Designers <contact@proficientdesigeners.com>",
+	"dependencies": {}
+}
