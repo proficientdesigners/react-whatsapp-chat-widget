@@ -5,6 +5,7 @@ export default function Chat(props) {
         chatPersonName = props.chatPersonName ? props.chatPersonName : 'Support',
         chatMessage = props.chatMessage ? props.chatMessage : /*#__PURE__*/React.createElement(React.Fragment, null, "Hi there \uD83D\uDC4B ", /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("br", null), " How can I help you?");
   return /*#__PURE__*/React.createElement("div", {
+    key: props,
     className: "whatsapp_widget_chat_wrapper",
     style: {
       backgroundColor: bodyBgColor

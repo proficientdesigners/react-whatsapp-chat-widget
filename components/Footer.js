@@ -5,6 +5,7 @@ export default function Footer(props) {
         btnBgColor = props.btnBgColor ? props.btnBgColor : 'rgb(79, 206, 93)',
         phoneNo = props.phoneNo ? props.phoneNo : false;
   return /*#__PURE__*/React.createElement("div", {
+    key: props,
     className: "whatsapp_widget_footer",
     style: {
       backgroundColor: footerBgColor

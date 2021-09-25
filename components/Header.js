@@ -16,6 +16,7 @@ export default function Header(props) {
         headerTitle = props.headerTitle ? props.headerTitle : 'Customer Support',
         headerCaption = props.headerCaption ? props.headerCaption : 'Online';
   return /*#__PURE__*/React.createElement("div", {
+    key: props,
     className: "whatsapp_widget_header",
     style: {
       backgroundColor: headerBgColor,

@@ -1,10 +1,11 @@
 import React, { useContext } from "react";
 import WidgetContext from "./Context";
-export default function CloseBtn() {
+export default function CloseBtn(props) {
   const {
     handleOpen
   } = useContext(WidgetContext);
   return /*#__PURE__*/React.createElement("div", {
+    key: props,
     style: {
       cursor: 'pointer'
     },

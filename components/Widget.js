@@ -10,6 +10,7 @@ export default function Widget(props) {
     right: 15
   };
   return /*#__PURE__*/React.createElement("div", {
+    key: props,
     className: "whatsapp_widget_wrapper",
     style: {
       bottom: 15,

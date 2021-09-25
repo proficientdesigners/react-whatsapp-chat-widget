@@ -8,6 +8,7 @@ export default function Pop(props) {
     isOpen
   } = useContext(WidgetContext);
   return /*#__PURE__*/React.createElement("div", {
+    key: props,
     className: `whatsapp_widget_pop ${isOpen ? 'whatsapp_widget_pop_open' : 'close'}`
   }, /*#__PURE__*/React.createElement(Header, props), /*#__PURE__*/React.createElement(Chat, props), /*#__PURE__*/React.createElement(Footer, props));
 }

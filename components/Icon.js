@@ -8,6 +8,7 @@ export default function AppIcon(props) {
         iconColor = props.iconColor ? props.iconColor : 'rgb(37, 211, 102)',
         iconBgColor = props.iconBgColor ? props.iconBgColor : 'rgb(255, 255, 255)';
   return /*#__PURE__*/React.createElement("div", {
+    key: props,
     onClick: handleOpen,
     className: "whatsapp_widget_icon",
     style: {
