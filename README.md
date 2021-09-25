@@ -18,7 +18,7 @@ yarn add react-whatsapp-chat-widget
 import React from "react";
 
 import WhatsAppWidget from "react-whatsapp-chat-widget";
-import WhatsAppWidget from "react-whatsapp-chat-widget/index.css";
+import "react-whatsapp-chat-widget/index.css";
 
 const ReactApp = () => {
 	return (
