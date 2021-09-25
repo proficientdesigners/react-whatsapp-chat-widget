@@ -2,7 +2,7 @@ import React from "react";
 import CloseBtn from "./CloseBtn";
 import HeadPhoneIcon from "./HeadPhoneIcon";
 export default function Header(props) {
-  const headerIconColor = props.headerIconColor ? props.headerIconColor : 'currentColor',
+  const headerIconColor = props.headerIconColor ? props.headerIconColor : 'rgba(100, 100, 100)',
         headerIcon = props.headerIcon ? /*#__PURE__*/React.createElement("img", {
     src: props.headerIcon,
     alt: "chat_logo",
