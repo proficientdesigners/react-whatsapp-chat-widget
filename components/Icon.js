@@ -17,8 +17,8 @@ export default function AppIcon(props) {
       height: iconSize
     }
   }, /*#__PURE__*/React.createElement("svg", {
-    width: Math.round(iconSize / 1.4),
-    height: Math.round(iconSize / 1.4),
+    width: Math.round(iconSize / 1.8),
+    height: Math.round(iconSize / 1.8),
     fill: iconColor,
     viewBox: "0 0 16 16"
   }, /*#__PURE__*/React.createElement("path", {

@@ -1,17 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 export default function Footer(props) {
-  const footerBgColor = props.footerBgColor ? props.footerBgColor : 'rgb(255, 255, 255)',
+  const footerBgColor = props.footerBgColor ? props.footerBgColor : 'rgb(245, 245, 245)',
         btnTxtColor = props.btnTxtColor ? props.btnTxtColor : 'rgb(255, 255, 255)',
         btnBgColor = props.btnBgColor ? props.btnBgColor : 'rgb(79, 206, 93)',
         phoneNo = props.phoneNo ? props.phoneNo : false;
+  const [message, setMessage] = useState(props.messageBoxTxt ? encodeURI(props.messageBoxTxt) : '');
   return /*#__PURE__*/React.createElement("div", {
     key: props,
     className: "whatsapp_widget_footer",
     style: {
       backgroundColor: footerBgColor
     }
-  }, /*#__PURE__*/React.createElement("a", {
-    href: `https://wa.me/${phoneNo}`,
+  }, props.messageBox && /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("input", {
+    type: "text",
+    onChange: e => setMessage(encodeURI(e.target.value)),
+    className: "whatsapp_widget_input",
+    placeholder: "Type a message.."
+  })), /*#__PURE__*/React.createElement("a", {
+    href: `https://wa.me/${phoneNo}?text=${message}`,
     onClick: e => {
       if (!phoneNo) {
         e.preventDefault();

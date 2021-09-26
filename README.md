@@ -1,10 +1,10 @@
 ## react-whatsapp-chat-widget
 
-> This is a Whatsapp Chat Widget where you can use like a professional chat plugin in your react project with full customization of your own.
+[![npm version](https://badge.fury.io/js/react-whatsapp-chat-widget.svg)](https://www.npmjs.com/package/react-whatsapp-chat-widget) &nbsp; [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/proficientdesigners/react-whatsapp-chat-widget/blob/master/LICENSE)
 
-[![npm version](https://badge.fury.io/js/react-whatsapp-chat-widget.svg)](https://www.npmjs.com/package/react-whatsapp-chat-widget) &bull; [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/proficientdesigners/react-whatsapp-chat-widget/blob/master/LICENSE)
+> This is a Whatsapp Chat Widget for react where you can use as a plugin in your react project with full customization of your own.
 
-## Getting Started
+### Getting Started
 
 ```bash
 npm install react-whatsapp-chat-widget
@@ -12,7 +12,7 @@ npm install react-whatsapp-chat-widget
 yarn add react-whatsapp-chat-widget
 ```
 
-## Usage
+### Usage
 
 ```jsx
 import React from "react";
@@ -25,6 +25,10 @@ const ReactApp = () => {
 		<WhatsAppWidget
 			phoneNo="919884098840"
 			position="right"
+			autoOpen={true}
+			autoOpenTimer={5000}
+			messageBox={true}
+			messageBoxTxt="Hi Team, is there any related service available ?"
 			iconSize="40"
 			iconColor="white"
 			iconBgColor="tomato"
@@ -58,6 +62,8 @@ Example: `919884098840` where 91 is the International code for India.
 | position        | `string`         | `'right'`                                          | Position the widget to left bottom or right bottom (Enum `'left', 'right'`)                                                                      |
 | autoOpen        | `boolean`        | `'false'`                                          | Open the chat box automatically                                                                                                                  |
 | autoOpenTimer   | `string, number` | `3000` in milliseconds                             | Set timer to open the chat box automatically                                                                                                     |
+| messageBox      | `boolean`        | `false`                                            | Message box is hidden by default, so you can enable it if needed                                                                                 |
+| messageBoxTxt   | `string`         | `''`                                               | If Message box is enabled, you can put the default text for the user to start up with the conversation                                           |
 | iconSize        | `string`         | `'52'`                                             | Fix the size of the chat icon                                                                                                                    |
 | iconColor       | `string`         | `'rgb(37, 211, 102)'`                              | Chat icon color (`HexCode, RGB` format)                                                                                                          |
 | iconBgColor     | `string`         | `'#ffffff'`                                        | Chat icon background color (`HexCode, RGB` format)                                                                                               |
@@ -75,10 +81,11 @@ Example: `919884098840` where 91 is the International code for India.
 | btnTxtColor     | `string`         | `'rgb(255, 255, 255)'`                             | Start chat button text color                                                                                                                     |
 
 
-## License
+### License
 
 [MIT](https://github.com/proficientdesigners/react-whatsapp-chat-widget/blob/master/LICENSE)
 
-## Created by
+### Created by
 
+![Proficient Designers](https://download.proficientdesigners.in/favicon-32x32.png "Proficient Designers")
 [proficientdesigners.com](https://proficientdesigners.com/)
