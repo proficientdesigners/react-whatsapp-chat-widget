@@ -17,20 +17,17 @@ html {
 		"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 .whatsapp_widget_chat_wrapper {
-	max-width: 300px;
-	width: 300px;
+	width: var(--widget-width);
 	padding: 15px;
 	display: -webkit-box;
 	display: flex;
 }
 @media (max-width: 360px) {
 	.whatsapp_widget_chat_wrapper {
-		min-width: 222px;
-		width: auto;
+		width: var(--widget-width-mobile);
 	}
 }
 .whatsapp_widget_chat_wrapper_inner {
-	width: auto;
 	position: relative;
 	background-color: #fff;
 	padding: 10px;
@@ -56,13 +53,11 @@ html {
 	padding: 12px 15px;
 	border-bottom-left-radius: 10px;
 	border-bottom-right-radius: 10px;
-	max-width: 300px;
-	width: 300px;
+	width: var(--widget-width);
 }
 @media (max-width: 360px) {
 	.whatsapp_widget_footer {
-		min-width: 222px;
-		width: auto;
+		width: var(--widget-width-mobile);
 	}
 }
 .whatsapp_widget_footer_btn {
@@ -92,13 +87,11 @@ html {
 	padding: 15px;
 	border-top-left-radius: 10px;
 	border-top-right-radius: 10px;
-	max-width: 300px;
-	width: 300px;
+	width: var(--widget-width);
 }
 @media (max-width: 360px) {
 	.whatsapp_widget_header {
-		min-width: 222px;
-		width: auto;
+		width: var(--widget-width-mobile);
 	}
 }
 .whatsapp_widget_header_icon {

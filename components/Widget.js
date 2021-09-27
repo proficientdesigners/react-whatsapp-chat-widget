@@ -14,7 +14,14 @@ export default function Widget(props) {
     right: 15
   },
         autoOpen = props.autoOpen ? props.autoOpen : false,
-        autoOpenTimer = props.autoOpenTimer ? props.autoOpenTimer : 3000;
+        autoOpenTimer = props.autoOpenTimer ? props.autoOpenTimer : 3000,
+        widgetWidth = props.widgetWidth ? props.widgetWidth : '300px',
+        widgetWidthMobile = props.widgetWidthMobile ? props.widgetWidthMobile : '260px';
+  useEffect(() => {
+    let root = document.querySelector(':root');
+    root.style.setProperty('--widget-width', widgetWidth);
+    root.style.setProperty('--widget-width-mobile', widgetWidthMobile);
+  }, [widgetWidth, widgetWidthMobile]);
   useEffect(() => {
     if (autoOpen) {
       setTimeout(handleOpen, autoOpenTimer);
