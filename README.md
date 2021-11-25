@@ -52,6 +52,7 @@ const ReactApp = () => {
 			footerBgColor="#999"
 			btnBgColor="yellow"
 			btnTxtColor="black"
+			btnTxt="Start Chat"
 		/>
 	);
 };
@@ -88,7 +89,8 @@ Example: `919884098840` where 91 is the International code for India.
 | chatPersonName    | `string`         | `'Support'`                                        | Person name in the chat bubble                                                                                                                   |
 | chatMessage       | `reactNode`      | `<>Hi there 👋 <br /><br /> How can I help you?</>` | Message text in the chat bubble                                                                                                                  |
 | footerBgColor     | `string`         | `'rgb(255, 255, 255)'`                             | Footer background color                                                                                                                          |
-| btnBgColor        | `string`         | `'rgb(79, 206, 93)'`                               | Start chat button background color                                                                                                               |
+| btnBgColor        | `string`         | `'rgb(79, 206, 93)'`                               | Start chat button background color
+| btnTxt        | `string`         | `'Start Chat'`                               | Button Text
 | btnTxtColor       | `string`         | `'rgb(255, 255, 255)'`                             | Start chat button text color                                                                                                                     |
 
 
