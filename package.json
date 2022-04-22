@@ -15,5 +15,8 @@
 		"api"
 	],
 	"author": "Proficient Designers <contact@proficientdesigeners.com>",
-	"dependencies": {}
+	"dependencies": {},
+	"scripts": {
+		"test": ""
+	}
 }
