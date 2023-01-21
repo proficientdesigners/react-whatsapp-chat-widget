@@ -4,11 +4,9 @@ export function WhatsAppWidgetContextProvider({
   children
 }) {
   const [isOpen, setIsOpen] = useState(false);
-
   const handleOpen = () => {
-    setIsOpen(prevState => setIsOpen(!prevState));
+    setIsOpen(prevState => !prevState);
   };
-
   return /*#__PURE__*/React.createElement(Context.Provider, {
     value: {
       isOpen,

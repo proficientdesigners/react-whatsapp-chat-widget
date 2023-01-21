@@ -5,8 +5,8 @@ export default function AppIcon(props) {
     handleOpen
   } = useContext(WidgetContext);
   const iconSize = props.iconSize ? parseInt(props.iconSize) : 52,
-        iconColor = props.iconColor ? props.iconColor : 'rgb(37, 211, 102)',
-        iconBgColor = props.iconBgColor ? props.iconBgColor : 'rgb(255, 255, 255)';
+    iconColor = props.iconColor ? props.iconColor : 'rgb(37, 211, 102)',
+    iconBgColor = props.iconBgColor ? props.iconBgColor : 'rgb(255, 255, 255)';
   return /*#__PURE__*/React.createElement("div", {
     key: props,
     onClick: handleOpen,

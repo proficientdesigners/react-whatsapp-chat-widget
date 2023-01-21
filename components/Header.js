@@ -3,18 +3,18 @@ import CloseBtn from "./CloseBtn";
 import HeadPhoneIcon from "./HeadPhoneIcon";
 export default function Header(props) {
   const headerIconColor = props.headerIconColor ? props.headerIconColor : 'rgb(100, 100, 100)',
-        headerIcon = props.headerIcon ? /*#__PURE__*/React.createElement("img", {
-    src: props.headerIcon,
-    alt: "chat_logo",
-    width: "40"
-  }) : /*#__PURE__*/React.createElement(HeadPhoneIcon, {
-    headerIconColor: headerIconColor
-  }),
-        headerIconBgColor = props.headerIconBgColor ? props.headerIconBgColor : 'rgb(255,255,255)',
-        headerTxtColor = props.headerTxtColor ? props.headerTxtColor : 'rgb(255,255,255)',
-        headerBgColor = props.headerBgColor ? props.headerBgColor : 'rgb(7, 94, 84)',
-        headerTitle = props.headerTitle ? props.headerTitle : 'Customer Support',
-        headerCaption = props.headerCaption ? props.headerCaption : 'Online';
+    headerIcon = props.headerIcon ? /*#__PURE__*/React.createElement("img", {
+      src: props.headerIcon,
+      alt: "chat_logo",
+      width: "40"
+    }) : /*#__PURE__*/React.createElement(HeadPhoneIcon, {
+      headerIconColor: headerIconColor
+    }),
+    headerIconBgColor = props.headerIconBgColor ? props.headerIconBgColor : 'rgb(255,255,255)',
+    headerTxtColor = props.headerTxtColor ? props.headerTxtColor : 'rgb(255,255,255)',
+    headerBgColor = props.headerBgColor ? props.headerBgColor : 'rgb(7, 94, 84)',
+    headerTitle = props.headerTitle ? props.headerTitle : 'Customer Support',
+    headerCaption = props.headerCaption ? props.headerCaption : 'Online';
   return /*#__PURE__*/React.createElement("div", {
     key: props,
     className: "whatsapp_widget_header",

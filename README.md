@@ -51,6 +51,7 @@ const ReactApp = () => {
 			chatMessage={<>Hi there 👋 <br /><br /> How can I help you?</>}
 			footerBgColor="#999"
 			btnBgColor="yellow"
+			btnTxt="Start Chat"
 			btnTxtColor="black"
 		/>
 	);
@@ -58,7 +59,6 @@ const ReactApp = () => {
 
 export default ReactApp;
 ```
- 
 
 ⚠️ The `phoneNo` is a full phone number in international format. Omit any zeroes, brackets, or dashes when adding the phone number in international format.
 
@@ -89,8 +89,8 @@ Example: `919884098840` where 91 is the International code for India.
 | chatMessage       | `reactNode`      | `<>Hi there 👋 <br /><br /> How can I help you?</>` | Message text in the chat bubble                                                                                                                  |
 | footerBgColor     | `string`         | `'rgb(255, 255, 255)'`                             | Footer background color                                                                                                                          |
 | btnBgColor        | `string`         | `'rgb(79, 206, 93)'`                               | Start chat button background color                                                                                                               |
+| btnTxt            | `string`         | `'rgb(255, 255, 255)'`                             | Start chat button text                                                                                                                           |
 | btnTxtColor       | `string`         | `'rgb(255, 255, 255)'`                             | Start chat button text color                                                                                                                     |
-
 
 ### License
 
