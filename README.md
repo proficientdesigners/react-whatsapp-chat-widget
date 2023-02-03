@@ -50,6 +50,7 @@ const ReactApp = () => {
 			chatPersonName="Support"
 			chatMessage={<>Hi there 👋 <br /><br /> How can I help you?</>}
 			footerBgColor="#999"
+			placeholder="Type a message.."
 			btnBgColor="yellow"
 			btnTxt="Start Chat"
 			btnTxtColor="black"

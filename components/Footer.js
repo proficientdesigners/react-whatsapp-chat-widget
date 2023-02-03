@@ -4,7 +4,8 @@ export default function Footer(props) {
     btnTxtColor = props.btnTxtColor ? props.btnTxtColor : 'rgb(255, 255, 255)',
     btnTxt = props.btnTxt ? props.btnTxt : 'Start Chat',
     btnBgColor = props.btnBgColor ? props.btnBgColor : 'rgb(79, 206, 93)',
-    phoneNo = props.phoneNo ? props.phoneNo : false;
+    phoneNo = props.phoneNo ? props.phoneNo : false,
+    placeholder = props.placeholder ? props.placeholder : 'Type a message..';
   const [message, setMessage] = useState(props.messageBoxTxt ? encodeURI(props.messageBoxTxt) : '');
   return /*#__PURE__*/React.createElement("div", {
     key: props,
@@ -16,7 +17,7 @@ export default function Footer(props) {
     type: "text",
     onChange: e => setMessage(encodeURI(e.target.value)),
     className: "whatsapp_widget_input",
-    placeholder: "Type a message..",
+    placeholder: placeholder,
     defaultValue: props.messageBoxTxt
   })), /*#__PURE__*/React.createElement("a", {
     href: `https://wa.me/${phoneNo}?text=${message}`,
