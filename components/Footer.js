@@ -16,7 +16,7 @@ export default function Footer(props) {
     type: "text",
     onChange: e => setMessage(encodeURI(e.target.value)),
     className: "whatsapp_widget_input",
-    placeholder: "Type a message..",
+    placeholder: props.placeholder || "Type a message..",
     defaultValue: props.messageBoxTxt
   })), /*#__PURE__*/React.createElement("a", {
     href: `https://wa.me/${phoneNo}?text=${message}`,

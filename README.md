@@ -37,6 +37,7 @@ const ReactApp = () => {
 			autoOpenTimer={5000}
 			messageBox={true}
 			messageBoxTxt="Hi Team, is there any related service available ?"
+			placeholder="Type a message.."
 			iconSize="40"
 			iconColor="white"
 			iconBgColor="tomato"
@@ -75,6 +76,7 @@ Example: `919884098840` where 91 is the International code for India.
 | autoOpenTimer     | `string, number` | `3000` in milliseconds                             | Set timer to open the chat box automatically                                                                                                     |
 | messageBox        | `boolean`        | `false`                                            | Message box is hidden by default, so you can enable it if needed                                                                                 |
 | messageBoxTxt     | `string`         | `''`                                               | If Message box is enabled, you can put the default text for the user to start up with the conversation                                           |
+| placeholder       | `string`         | `Type a message..`                                 | Placeholder text for empty message box                                                                                                           |
 | iconSize          | `string`         | `'52'`                                             | Fix the size of the chat icon                                                                                                                    |
 | iconColor         | `string`         | `'rgb(37, 211, 102)'`                              | Chat icon color (`HexCode, RGB` format)                                                                                                          |
 | iconBgColor       | `string`         | `'#ffffff'`                                        | Chat icon background color (`HexCode, RGB` format)                                                                                               |
