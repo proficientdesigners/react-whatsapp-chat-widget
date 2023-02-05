@@ -40,7 +40,7 @@ const ReactApp = () => {
 			iconSize="40"
 			iconColor="white"
 			iconBgColor="tomato"
-			headerIcon="https://proficientdesigners.in/wp-content/themes/pd/img/logo-new.png"
+			headerIcon="https://www.pdapps.net.in/_next/static/media/android-chrome-192x192.9a39c2c7.png"
 			headerIconColor="pink"
 			headerTxtColor="black"
 			headerBgColor="tomato"
